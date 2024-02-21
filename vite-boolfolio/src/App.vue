@@ -1,7 +1,7 @@
 <script>
 
   import AppMain from './components/AppMain.vue';
-  import AppMain from './components/AppMain.vue';
+  import AppHeader from './components/AppHeader.vue';
 
   export default{ components: { AppHeader, AppMain }
 }
@@ -10,10 +10,6 @@
 <template>
 <AppHeader/>
 <AppMain/>
-
-<h1 class="title text-center">
-  prova di titolo
-</h1>
 </template>
 
 <style lang="scss">

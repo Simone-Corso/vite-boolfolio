@@ -23,7 +23,9 @@ export default {
 
     methods:{
         getProjects(){
+            axios.get('/api/projects'{
 
+            })
         }
     },
 

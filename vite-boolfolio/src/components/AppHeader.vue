@@ -7,7 +7,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item" v-for="link in linkItems">
+        <li class="nav-item" v-for="(link,index) in linkItems" :key="index">
           <router-link :to="{name: link.routeName}" class="nav-link active">
             {{link.label}}
             

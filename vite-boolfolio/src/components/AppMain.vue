@@ -23,9 +23,19 @@ export default {
 
     methods:{
         getProjects(){
-            axios.get('/api/projects'{
-
+            axios.get('http://127.0.0.1:8000/api/projects',{
+                params: {
+                }
             })
+            .then(function(response){
+                console.log(response);
+            })
+            .catch(function(error){
+                console.log(error);
+            })
+            .finally(function(){
+
+            });
         }
     },
 

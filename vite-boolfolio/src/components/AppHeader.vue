@@ -8,19 +8,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <route-link :to="{name: 'home'}" class="nav-link active">
+          <router-link :to="{name: 'home'}" class="nav-link active">
             home
-          </route-link>
+          </router-link>
         </li>
         <li class="nav-item">
-          <route-link :to="{name: 'project'}" class="nav-link active">
+          <router-link :to="{name: 'project'}" class="nav-link active">
             Project
-          </route-link>
+          </router-link>
         </li>
         <li class="nav-item">
-          <route-link :to="{name: 'categories'}"class="nav-link active">
+          <router-link :to="{name: 'categories'}"class="nav-link active">
             Categories
-          </route-link>
+          </router-link>
         </li>
       </ul>
     </div>

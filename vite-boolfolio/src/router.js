@@ -8,18 +8,18 @@ const router = createRouter ({
     history: createWebHistory(),
     routes : [
         {
-            path:'/',
+            path:'/home',
             name: 'home',
             component: HomePageVue
         },
         {
-            path:'/Project',
-            name: 'Project',
+            path:'/project',
+            name: 'project',
             component: ProjectListVue
         },
         {
-            path:'/Categories',
-            name: 'Categories',
+            path:'/categories',
+            name: 'categories',
             component: CategoriesListVue
         }
 

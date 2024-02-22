@@ -5,6 +5,12 @@
                 <h1>
                     Un altro project:
                 </h1>
+                <ul>
+                    <li v-for="project in projects" :key="project.id">
+                        {{ project.title }} -- {{project.type}}
+                        <img :src="project.thumb" alt="" class="image-project">
+                    </li>
+                </ul>
             </div>
         </div>
     
@@ -18,17 +24,20 @@ import axios from 'axios';
 export default {
     name: 'AppMain',
     data(){
-        
+       return {
+        projects: [],
+       }
     },
 
     methods:{
         getProjects(){
-            axios.get('http://127.0.0.1:8000/api/projects',{
+            axios.get('http://127.0.0.1:8000/api/project',{
                 params: {
                 }
             })
-            .then(function(response){
+            .then((response)=>{
                 console.log(response);
+                this.projects = response.data.result.data;
             })
             .catch(function(error){
                 console.log(error);
@@ -45,6 +54,11 @@ export default {
 
 }
 </script>
-<style lang="">
+<style scoped>
+
+.image-project{
+    height: 100px;
+
+}
     
 </style>

@@ -8,13 +8,19 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <route-link :to="{name: 'home'}" class="nav-link active">
+            home
+          </route-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Project</a>
+          <route-link :to="{name: 'project'}" class="nav-link active">
+            Project
+          </route-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Categories</a>
+          <route-link :to="{name: 'categories'}"class="nav-link active">
+            Categories
+          </route-link>
         </li>
       </ul>
     </div>

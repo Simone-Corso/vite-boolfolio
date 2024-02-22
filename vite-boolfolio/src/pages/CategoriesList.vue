@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        <h1>home</h1>
+        <h1>CategoriesList</h1>
     </div>
 </template>
 <script>

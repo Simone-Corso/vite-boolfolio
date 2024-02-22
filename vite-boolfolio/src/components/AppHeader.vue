@@ -7,19 +7,10 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <router-link :to="{name: 'home'}" class="nav-link active">
-            home
-          </router-link>
-        </li>
-        <li class="nav-item">
-          <router-link :to="{name: 'project'}" class="nav-link active">
-            Project
-          </router-link>
-        </li>
-        <li class="nav-item">
-          <router-link :to="{name: 'categories'}"class="nav-link active">
-            Categories
+        <li class="nav-item" v-for="link in linkItems">
+          <router-link :to="{name: link.routeName}" class="nav-link active">
+            {{link.label}}
+            
           </router-link>
         </li>
       </ul>
@@ -30,7 +21,25 @@
 </template>
 <script>
 export default {
-    
+    data(){ 
+      return {
+        linkItems: [
+          {
+            label: 'home',
+            routeName: 'home'
+          },
+          {
+            label: 'project',
+            routeName: 'project'
+          },
+          {
+            label: 'categories',
+            routeName: 'categories'
+          }
+        ]
+      }
+      
+    }
 }
 </script>
 <style lang="">

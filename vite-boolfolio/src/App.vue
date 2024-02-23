@@ -18,5 +18,12 @@
 
 <style lang="scss">
 @use './style/general.scss' as *;
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,600&family=Open+Sans:wght@400;500;700;800&family=PT+Sans:wght@400;700&family=Roboto&display=swap');
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 </style>

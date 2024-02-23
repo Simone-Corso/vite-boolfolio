@@ -1,13 +1,17 @@
 <template lang="">
     <main class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mt-5">
                 <ul>
                     <li v-for="project in projects" :key="project.id">
                         <div class="project-image">
-                            <h2>{{ project.title }}</h2>
+                            <h2 class="title ms-2">
+                                {{ project.title }}
+                            </h2>
                                 <img :src="project.thumb" alt="" class="image-project">
-                                <p>{{ project.description }}</p>
+                                <p>
+                                    {{ project.description }}
+                                </p>
                         </div>
                     </li>
                 </ul>
@@ -63,6 +67,12 @@ export default {
 
 .project-info {
   margin-top: 20px;
+}
+
+.col-12{
+    border-radius: 20px;
+    background-color: rgb(230, 230, 230);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .image-project {
